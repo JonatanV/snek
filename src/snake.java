@@ -10,7 +10,9 @@ public class snake extends Canvas {
     }
     int height=600;
     int width=800;
-    BufferStrategy bs;  
+    int x=100;
+    int y=100;
+    BufferStrategy bs;
     public snake(){
         setSize(width,height);
         JFrame frame = new JFrame("Grafik");
@@ -23,13 +25,15 @@ public class snake extends Canvas {
     public void paint (Graphics g){
         bs = getBufferStrategy();
         if(bs == null) {
-            createBufferStrategy(3);
+            createBufferStrategy(1);
             return;
         }
+        update(g);
         draw(g);
         g.dispose();
         bs.show();
-        repaint();
+
+    BufferStrategy bs;   repaint();
     }
     public void draw (Graphics g){
         g.setColor(new Color(0x000));
@@ -38,13 +42,26 @@ public class snake extends Canvas {
     }
     private void snakePlayer(Graphics g){
         g.setColor(Color.RED);
-        g.fillRect(400,300,15,15);
+        g.fillRect(x,y,15,15);
+    }
+    public void update(Graphics g){
+        x++;
     }
 
     private class kl implements KeyListener {
         @Override
         public void keyTyped(KeyEvent keyEvent) {
+            if (keyEvent.getKeyChar()=='a'){
 
+            }else if(keyEvent.getKeyChar()=='w'){
+
+            }else if(keyEvent.getKeyChar()=='s'){
+                y++;
+            }else if(keyEvent.getKeyChar()=='d'){
+
+            }else if (keyEvent.getKeyChar()=='\n'){
+
+            }
         }
 
         @Override
