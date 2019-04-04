@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="02db5223-1337-457c-9f0f-9e4388865f95" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../programmering1" beforeDir="false" afterPath="$PROJECT_DIR$/../programmering1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webbutveckling 1/bussdag" beforeDir="false" afterPath="$PROJECT_DIR$/../webbutveckling 1/bussdag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webbutveckling 1/cv" beforeDir="false" afterPath="$PROJECT_DIR$/../webbutveckling 1/cv" afterDir="false" />
@@ -26,10 +27,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="286">
+              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1207#1208#0" expanded="true" />
+                <element signature="e#1226#1227#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,7 +48,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -157,7 +160,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -183,10 +186,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/snake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="286">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
           </folding>
         </state>
       </provider>
