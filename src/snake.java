@@ -9,6 +9,8 @@ public class snake extends Canvas implements Runnable {
     int width = 800;
     int x = 100;
     int y = 100;
+    int vx;
+    int vy;
     BufferStrategy bs;
     private Thread thread;
     private boolean running = false;
@@ -57,10 +59,17 @@ public class snake extends Canvas implements Runnable {
         g.fillRect(0,0,width,height);
         g.setColor(Color.RED);
         g.fillRect(x, y, 15, 15);
+        frukt(g);
+    }
+
+    private void frukt(Graphics g) {
+        g.setColor(new Color(0x000));
+        g.fillOval(100,100,15,15);
     }
 
     public void update() {
-
+        x+=vx;
+        y+=vy;
     }
 
     @Override
@@ -101,15 +110,36 @@ public class snake extends Canvas implements Runnable {
         @Override
         public void keyTyped(KeyEvent keyEvent) {
             if (keyEvent.getKeyChar() == 'a') {
-                x--;
+                if (vx==1){
+
+                }else {
+                    vx = -1;
+                    vy = 0;
+                }
             } else if (keyEvent.getKeyChar() == 'w') {
-                y--;
+                if (vy==1){
+
+                }else{
+                    vy = -1;
+                    vx = 0;
+                }
 
             } else if (keyEvent.getKeyChar() == 's') {
-                y++;
+                if(vy==-1){
+
+                }else{
+                    vy += 1;
+                    vx = 0;
+                }
 
             } else if (keyEvent.getKeyChar() == 'd') {
-                x++;
+               if (vx==-1){
+
+               }else{
+                vx+=1;
+                vy = 0;
+               }
+
 
             } else if (keyEvent.getKeyChar() == '\n') {
 
