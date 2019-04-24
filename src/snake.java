@@ -3,15 +3,21 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.image.BufferStrategy;
+import java.util.Random;
 
 public class snake extends Canvas implements Runnable {
     int height = 600;
     int width = 800;
     int x = 100;
     int y = 100;
+    int x1;
+    int y1;
     int vx;
     int vy;
+    Random R=new Random();
     BufferStrategy bs;
+    Rectangle target;
+    Rectangle striker;
     private Thread thread;
     private boolean running = false;
 
@@ -24,6 +30,12 @@ public class snake extends Canvas implements Runnable {
         frame.pack();
         frame.setVisible(true);
         frame.addKeyListener(new kl());
+
+        x1 = R.nextInt(790);
+        y1 = R.nextInt(590);
+
+        target = new Rectangle(R.nextInt(width-11), R.nextInt(height-11), 10,10);
+        striker = new Rectangle(width-16, height-16,15,15);
     }
 
     public synchronized void start() {
@@ -45,6 +57,7 @@ public class snake extends Canvas implements Runnable {
         bs = getBufferStrategy();
         if (bs == null) {
             createBufferStrategy(1);
+
             return;
         }
         Graphics g = bs.getDrawGraphics();
@@ -63,8 +76,9 @@ public class snake extends Canvas implements Runnable {
     }
 
     private void frukt(Graphics g) {
+
         g.setColor(new Color(0x000));
-        g.fillOval(100,100,15,15);
+        g.fillOval(x1,y1,15,15);
     }
 
     public void update() {
