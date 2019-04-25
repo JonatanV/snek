@@ -4,9 +4,6 @@
     <list default="true" id="02db5223-1337-457c-9f0f-9e4388865f95" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../programmering1" beforeDir="false" afterPath="$PROJECT_DIR$/../programmering1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snek/snake$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snek/snake$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snek/snake$kl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snek/snake$kl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snek/snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snek/snake.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webbutveckling 1/bussdag" beforeDir="false" afterPath="$PROJECT_DIR$/../webbutveckling 1/bussdag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webbutveckling 1/cv" beforeDir="false" afterPath="$PROJECT_DIR$/../webbutveckling 1/cv" afterDir="false" />
@@ -30,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+            <state relative-caret-position="530">
+              <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +99,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,7 +168,7 @@
     <frame x="65" y="25" width="1855" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2722745" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2722745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -180,7 +177,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.32972974" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4997233" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -232,7 +229,8 @@
     <MESSAGE value="lade till keylisteners meninget kan röra sig" />
     <MESSAGE value="kan gå men inte rätt" />
     <MESSAGE value="kan åka runt rätt" />
-    <option name="LAST_COMMIT_MESSAGE" value="kan åka runt rätt" />
+    <MESSAGE value="frukt finns på slump valda ställen" />
+    <option name="LAST_COMMIT_MESSAGE" value="frukt finns på slump valda ställen" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -259,8 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/snake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+        <state relative-caret-position="530">
+          <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

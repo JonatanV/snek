@@ -14,6 +14,7 @@ public class snake extends Canvas implements Runnable {
     int y1;
     int vx;
     int vy;
+    int fruktScore;
     Random R=new Random();
     BufferStrategy bs;
     Rectangle target;
@@ -31,10 +32,8 @@ public class snake extends Canvas implements Runnable {
         frame.setVisible(true);
         frame.addKeyListener(new kl());
 
-        x1 = R.nextInt(790);
-        y1 = R.nextInt(590);
 
-        target = new Rectangle(R.nextInt(width-11), R.nextInt(height-11), 10,10);
+        target = new Rectangle(R.nextInt(width-11), R.nextInt(height-11), 15,15);
         striker = new Rectangle(width-16, height-16,15,15);
     }
 
@@ -70,20 +69,28 @@ public class snake extends Canvas implements Runnable {
     public void draw(Graphics g) {
         g.setColor(new Color(0xfffffff));
         g.fillRect(0,0,width,height);
-        g.setColor(Color.RED);
-        g.fillRect(x, y, 15, 15);
+        snek(g);
         frukt(g);
+    }
+
+    private void snek(Graphics g) {
+        g.setColor(Color.RED);
+        g.fillRect(striker.x, striker.y, 15, 15);
     }
 
     private void frukt(Graphics g) {
 
         g.setColor(new Color(0x000));
-        g.fillOval(x1,y1,15,15);
+        g.fillOval(target.x,target.y,15,15);
     }
 
     public void update() {
-        x+=vx;
-        y+=vy;
+        striker.x+=vx;
+        striker.y+=vy;
+        if (striker.intersects(target)){
+            target.x=R.nextInt(width);
+            target.y=R.nextInt(height);
+        }
     }
 
     @Override
